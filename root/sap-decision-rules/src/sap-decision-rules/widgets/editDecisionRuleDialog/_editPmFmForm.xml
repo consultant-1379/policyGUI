@@ -1,0 +1,63 @@
+<form>
+    <field label="{{STATUS.label}}" name="status">
+        <text disabled="disabled" value="{{inputData.status}}"/>
+    </field>
+    <field label="{{EVENT_TYPE.label}}" name="eventType">
+        <text disabled="disabled" value="{{inputData.eventType}}"/>
+    </field>
+    <field label="{{ASSET_TYPE.label}}" name="assetType">
+        <text disabled="disabled" value="{{inputData.assetType}}"/>
+    </field>
+    <field label="{{TENANT_NAME.label}}" name="tenantName">
+        {{#if inputData.tenantName}}
+            <text disabled="disabled" value="{{inputData.tenantName}}"/>
+        {{else}}
+            <text disabled="disabled" />
+        {{/if}}
+    </field>
+    <field label="{{METER_NAME.label}}" name="meterName">
+        {{#if inputData.meterName}}
+             <text disabled="disabled" value="{{inputData.meterName}}"/>
+        {{else}}
+            <text disabled="disabled" />
+        {{/if}}
+    </field>
+
+    <field label="{{SEVERITY.label}}" name="severity">
+        <text disabled="disabled" value="{{inputData.severity}}"/>
+    </field>
+
+    <struct label="{{PRIMARY_ACTION.label}}" name="primaryAction" expanded="expanded">
+        <field label="{{ACTION.label}}" name="action" info="Required: Action value" required="required">
+            <select>
+                    <option value="restart">{{ACTION.restartVm}}</option>
+                    <option value="recreate">{{ACTION.recreate}}</option>
+                    <option value="logOnly">{{ACTION.logOnly}}</option>
+             </select>
+         </field>
+    </struct>
+     <struct label="{{ALTERNATE_ACTION.label}}" name="alternateAction" expanded="expanded">
+       <field label="{{ACTION_COUNT.label}}" info="{{ACTION_COUNT.info}}" name="{{ACTION_COUNT.name}}">
+            {{#if inputData.actionCount}}
+                <text value="{{inputData.actionCount}}"/>
+            {{else}}
+                <text/>
+            {{/if}}
+        </field>
+       <field label="{{TIME_LAPSE.label}}" info="{{TIME_LAPSE.info}}" name="timeLapse">
+            {{#if inputData.timeLapse}}
+                <text value="{{inputData.timeLapse}}"/>
+            {{else}}
+                <text/>
+            {{/if}}
+        </field>
+        <field label="{{ALT_ACTION.label}}" name="alternativeAction">
+           <select>
+                <option value="None" selected="selected">{{ALT_ACTION.emptyString}}</option>
+                <option value="recreate">{{ALT_ACTION.recreateVm}}</option>
+                <option value="restart">{{ALT_ACTION.restartVm}}</option>
+                <option value="logOnly">{{ACTION.logOnly}}</option>
+            </select>
+        </field>
+    </struct>
+</form>

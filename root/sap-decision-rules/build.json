@@ -1,0 +1,36 @@
+{
+    "parent": "$(parentJson)/app.json",
+    "defaultPhase": "package",
+    "properties": {
+        "package": "sap-decision-rules",
+        "name": "SapDecisionRules",
+        "version": "1.0.0",
+        "skeleton": "2.3.1",
+        "skeletonType": "app"
+    },
+    "phases": {
+        "package": {
+            "depends": [
+                "clean",
+                "analyze",
+                "test",
+                "compile",
+                "compress"
+            ]
+        }
+    },
+    "dependencies": {
+        "contextmenu": "0.1.14",
+        "flyout": "0.1.8",
+        "formvalidator": "0.2.2",
+        "navigation": "0.0.17",
+        "tablelib": "0.10.6",
+        "uit": "0.3.5",
+        "jscore": "1.7.17",
+        "i18n": "2.4.5",
+        "assets": "1.9.0",
+        "layouts": "1.8.9",
+        "widgets": "1.8.25",
+        "container": "1.14.12"
+    }
+}

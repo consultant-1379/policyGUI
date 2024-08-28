@@ -1,0 +1,17 @@
+{
+    "mappings": [
+
+        {
+            "source": "/sap-service",
+            "dest": "/sap-service"
+        }
+
+
+    ],
+    "host": "localhost",
+    "port": 8090,
+    "headers": {
+        "X-Custom-Header": "cdt"
+    }
+} 
+ 

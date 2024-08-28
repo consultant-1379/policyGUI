@@ -1,0 +1,57 @@
+<e-link src="./DecisionFilterForm.less"/>
+<div class="eaSapDecisionRules-wFilterForm">
+    <e-element src="layouts/Form" e-id="eaSapDecisionRules-filterForm">
+        <form>
+
+            <field label="{{columnHeaders.EVENT_TYPE}}" name="eventType">
+                <text
+                {{#if data.eventType}}value="{{data.eventType}}"{{/if}} />
+            </field>
+            <field label="{{columnHeaders.ASSET_TYPE}}" name="assetType">
+                <text
+                {{#if data.assetType}}value="{{data.assetType}}"{{/if}} />
+            </field>
+            <field label="{{columnHeaders.STATUS}}" name="status">
+                <text
+                {{#if data.status}}value="{{data.status}}"{{/if}} />
+            </field>
+            <field label="{{columnHeaders.TENANT_NAME}}" name="tenantName">
+                <text
+                {{#if data.tenantName}}value="{{data.tenantName}}"{{/if}} />
+            </field>
+            <field label="{{columnHeaders.METER_NAME}}" name="meterName">
+                <text
+                {{#if data.meterName}}value="{{data.meterName}}"{{/if}} />
+            </field>
+            <field label="{{columnHeaders.SEVERITY}}" name="severity">
+                <text
+                {{#if data.severity}}value="{{data.severity}}"{{/if}} />
+            </field>
+            <field label="{{columnHeaders.ACTION}}" name="action">
+                <text
+                {{#if data.action}}value="{{data.action}}"{{/if}} />
+            </field>
+            <field label="{{columnHeaders.ACTION_COUNTER_GREATER_THAN}}" name="actionCount">
+                <text
+                {{#if data.actionCount}}value="{{data.actionCount}}"{{/if}} />
+            </field>
+            <field label="{{columnHeaders.TIME_LAPSE}}" name="timeLapse">
+                <text
+                {{#if data.timeLapse}}value="{{data.timeLapse}}"{{/if}} />
+            </field>
+            <field label="{{columnHeaders.ALTERNATIVE_ACTION}}" name="alternativeAction">
+                <text
+                {{#if data.alternativeAction}}value="{{data.alternativeAction}}"{{/if}} />
+            </field>
+            <field label="{{columnHeaders.LAST_UPDATE_DATE}}" name="lastUpdateDate">
+                <text
+                {{#if data.lastUpdateDate}}value="{{data.lastUpdateDate}}"{{/if}} />
+            </field>
+            <field label="{{columnHeaders.CREATED_BY}}" name="createdBy">
+                <text
+                {{#if data.createdBy}}value="{{data.createdBy}}"{{/if}} />
+            </field>
+        </form>
+    </e-element>
+</div>
+

@@ -1,0 +1,360 @@
+{
+    "_class_comment1": "*** No comments allowed in this JSON file or will have parse error. 'title' is required for i18n! plugin to work.",
+    "_class_comment1a": "*** Will use this file as the root dictionary for all apps",
+    "_class_comment1b": "*** Server should pass specific exception keys in serverExceptionDescriptionKeys",
+    "_class_comment1c": "*** Enums on server can be translated for table cell presentation if contained in serverConstants tag",
+
+
+    "UNDEFINED_VALUE": "--",
+    "CLEAR_SELECTION": "Clear Selection",
+    "CLEAR_SELECTION_TOOLTIP": "Clear current selection to show default menu options",
+    "TABLE_SETTINGS_SELECT_LABEL": "Select",
+    "TABLE_SETTINGS_ALL": "All",
+    "TABLE_SETTINGS_NONE": "None",
+
+    "serverExceptionDescriptionKeys": {
+    "ESO_TEST_EXCEPTION_FROM_SERVER": "Test Special Server Message",
+    "MALFORMED_CONTENT": "A malformed content error occurred. Please check system logs.",
+    "503": "Service Unavailable. Please try again later or contact your System Administrator.",
+    "504": "Gateway Timeout. Please try again later or contact your System Administrator.",
+    "404": "The requested resource could not be found. Please try again later or contact your System Administrator."
+    },
+
+    "serverConstants": {
+    "IN PROGRESS": "In Progress",
+    "ACTIVE": "Active",
+    "INACTIVE": "Inactive",
+    "ERROR": "Error",
+    "FAILED": "Failed",
+    "FILTERED": "Filtered",
+    "COMPLETED": "Completed",
+    "USERNAME": "Username",
+    "PASSWORD":"Password",
+    "LOCATION":"Location"
+    },
+
+    "titles": {
+    "START_WORKFLOW": "Start Workflow",
+    "INSTALL_POLICY": "Install Policy",
+    "EXECUTION_LOGS": "Execution Logs",
+    "LOG_TABLE_HEADER": "Logs",
+    "DECISION_RULES_TABLE_HEADER": "Rules",
+    "EDIT_DECISION_RULE": "Decision Rules Details"
+    },
+
+    "columnTitles": {
+    "EVENT_TYPE": "Event Type",
+    "ASSET_TYPE": "Asset Type",
+    "ASSET_NAME": "Asset Name",
+    "STATUS": "Status",
+    "TENANT_NAME": "Tenant Name",
+    "METER_NAME": "Meter Name",
+    "SEVERITY_EVALUATION": "Severity Evaluation",
+    "SEVERITY": "Severity",
+    "ACTION": "Action",
+    "RAW_MESSAGE": "Raw Message",
+    "ACTION_COUNTER_GREATER_THAN": "Primary Action Count",
+    "TIME_LAPSE": "Time Lapse",
+    "ALTERNATIVE_ACTION": "Alternative Action",
+    "LAST_UPDATE_DATE": "Last Update Date",
+    "CREATED_BY": "Created By",
+    "IGNORE_MESSAGE_DURATION": "Ignore Message Duration",
+
+    "CREATION_DATE": "Creation Date",
+    "FROM_DATE": "From Date",
+    "TO_DATE": "To Date",
+    "INSTANCE_ID": "Instance Id",
+    "ENGINE_ID": "Engine Id",
+
+    "NAME": "Name",
+    "CREATE_DATE": "Creation Date",
+    "DESCRIPTION": "Description",
+    "ATTRIBUTE": "Attribute",
+    "VALUE": "Value",
+    "STATE": "State"
+    },
+
+    "rawMessages": {
+    "INPUT_OUTPUT": "input/output",
+    "INPUT_NOTES": "input/notes",
+    "INPUT": "Input",
+    "OUTPUT": "Output",
+    "NOTES": "Notes",
+    "NO_OUTPUT_AS_LOG_ONLY": "No output as Decision Rule is Log Only"
+    },
+
+    "links": {
+    "POLICY_APP_LINK_NAME": "Onboarding",
+    "SERVICE_RESOURCES_APP_LINK_NAME": "Resources"
+    },
+
+    "decisionRule": {
+    "NAME": "Name",
+    "FILE": "File"
+    },
+
+    "PRIMARY_ACTION": {
+    "label": "Primary Action"
+    },
+    "ALTERNATE_ACTION": {
+    "label": "Alternative Action"
+    },
+    "EVENT_TYPE": {
+    "label": "Event Type",
+    "name": "eventType",
+    "placeholder": "Select from list",
+    "error": "Event Type required",
+    "pm": "PM",
+    "comm": "COMM",
+    "fm": "FM"
+    },
+    "ASSET_TYPE": {
+    "label": "Asset Type",
+    "name": "assetType",
+    "placeholder": "Select from list",
+    "error": "Asset Type required",
+    "vm": "VM",
+    "vnf": "VNF",
+    "host": "Host"
+    },
+    "TENANT_NAME": {
+    "label": "Tenant Name",
+    "name": "tenantName",
+    "error": "Tenant Name required",
+    "placeholder": "xyz*, abc*"
+    },
+    "METER_NAME": {
+    "label": "Meter Name",
+    "name": "meterName",
+    "placeholder": "cpu*, disk*"
+    },
+    "SEVERITY_EVALUATION": {
+    "label": "Severity Evaluation",
+    "name": "severityEvaluation",
+    "gt": "Greater Than",
+    "gte": "Greater than or Equal to",
+    "equal": "Equal to"
+    },
+    "SEVERITY": {
+    "label": "Severity",
+    "name": "severity",
+    "warn": "Warning",
+    "minor": "Minor",
+    "major": "Major",
+    "critical": "Critical"
+    },
+    "ACTION": {
+    "label": "Action",
+    "name": "action",
+    "placeholder": "Select from list",
+    "recreateVms": "recreatevms",
+    "recreate": "recreate",
+    "restartVm": "restart",
+    "scaleOut": "scaleOut",
+    "scaleIn": "scaleIn",
+    "logOnly": "logOnly",
+    "heal": "heal",
+    "host": "Host"
+    },
+    "ACTION_COUNT": {
+    "label": "Primary Action Count",
+    "name": "primaryActionCount",
+    "info": "Number of times Primary Action is to be executed before Alternative Action is invoked"
+    },
+    "TIME_LAPSE": {
+    "label": "Time Lapse (minutes)",
+    "name": "timeLapse",
+    "info": "Value must be greater than the 'Action Count Greater Than' value",
+    "type": "number"
+    },
+    "ALT_ACTION": {
+    "label": "Alternative Action",
+    "name": "alternativeAction",
+    "placeholder": "Please select ...",
+    "error": "Please select one of the available options",
+    "recreateVm": "recreate",
+    "restartVm": "restart",
+    "scaleOut": "scaleOut",
+    "scaleIn": "scaleIn",
+    "heal": "heal",
+    "emptyString": "No Alternative Action"
+    },
+    "STATUS": {
+    "label": "Status",
+    "name": "status"
+    },
+
+    "validation": {
+    "VALIDATION_INVALID_CHARACTERS": "Invalid characters in value",
+    "VALUE_REQUIRED_MESSAGE": "Value required",
+    "VALID_JSON_REQUIRED_MESSAGE": "Value must be valid JSON",
+    "TEXT_LENGTH_EXCEEDS_LIMIT": "Text length exceeds limit of {0} characters"
+    },
+
+    "toasts": {
+    "STATUS_UPDATE_TOAST": "Status updated",
+
+    "DECISION_RULE_DELETE_SINGULAR_SUCCESS_TOAST": "Delete Decision Rule request sent",
+    "DECISION_RULES_DELETE_SUCCESS_TOAST": "Delete Decision Rules request sent",
+
+    "CLIPBOARD_UPDATED_TOAST": "Copied to clipboard",
+    "ACTIVATE_SUCCESS_TOAST": "Decision Rule has been activated."
+    },
+
+    "captions": {
+    "CREATE": "Create",
+    "EDIT": "Edit",
+    "ACTIVATE": "Activate",
+    "DEACTIVATE": "Deactivate",
+    "DELETE": "Delete",
+    "CREATE_DECISION_RULE": "Create Decision Rule",
+    "EDIT_DECISION_RULE": "Decision Rule Details",
+    "VIEW_DETAILS": "View Details",
+
+    "APPLY": "Apply",
+    "CANCEL": "Cancel",
+    "COPY": "Copy",
+    "PRINT": "Print",
+    "SAVE": "Save",
+    "NO": "No",
+    "CONTINUE": "Continue",
+    "OK": "OK",
+    "STAY_ON_PAGE": "Stay on this page",
+    "LEAVE_PAGE": "Leave this page",
+    "REFRESH_ON_PAGE": "Refresh this page",
+    "REFRESH_STAY_ON_PAGE": "Stay on this page",
+    "INSTALL": "Install",
+    "REFRESH": "Refresh",
+    "SUBMIT" :"Submit"
+    },
+
+    "loadingMessages": {
+    "LOADING_ACTIVATING_DECISION_RULE": "Activating Decision Rule(s)",
+    "LOADING_DEACTIVATING_DECISION_RULE": "Deactivating Decision Rule(s)",
+    "LOADING_CREATING_DECISION_RULE": "Creating Decision Rule",
+    "LOADING_DELETING_SINGULAR_DECISION_RULE": "Deleting 1 Decision Rule",
+    "LOADING_DELETING_DECISION_RULES": "Deleting {0} Decision Rules",
+    "RETRIEVING_DECISION_RULE_DATA": "Retrieving Decision Rule data"
+    },
+
+    "forbiddenActionMessages": {
+    "READ_EXECUTION_LOG_DETAILS": "read Execution Log Details",
+    "ACTIVATE_DECISION_RULE": "activate Decision Rule",
+    "DEACTIVATE_DECISION_RULE": "deactivate Decision Rule",
+    "DELETE_DECISION_RULE": "delete Decision Rule",
+    "DELETE_DECISION_RULES": "delete Decision Rules",
+    "VIEW_DECISION_RULES": "view Decision Rules",
+    "SUBMIT_CREDENTIALS" : "submit credentials",
+    "CREATE_DECISION_RULE": "Create Decision Rule"
+    },
+
+    "inline": {
+
+    "UNABLE_TO_RETRIEVE_DATA": "Unable to Retrieve Data",
+    "SERVER_ISSUE_INLINE_MESSAGE": "The server encountered an internal error. Please try again later or contact your System Administrator.",
+
+    "NO_DECISION_RULES_TO_DISPLAY_GRID_HEADER": "No Decision Rules Found",
+    "NO_DECISION_RULES_TO_DISPLAY_GRID_MESSAGE": "Use {0} button to add a Decision Rule",
+
+    "NO_LOGS_TO_DISPLAY_GRID_HEADER": "No Log entries exist"
+    },
+
+    "lastRefreshedLabels": {
+    "LAST_REFRESHED_START_MESSAGE": "Last refreshed 30 seconds ago",
+    "LAST_REFRESHED_DAYS_HOURS_MINS_SECS": "Last refreshed {0}{1}{2}{3}{4}{5}{6}{7}ago",
+    "DAY": " day ",
+    "DAYS": " days ",
+    "HOUR": " hour ",
+    "HOURS": " hours ",
+    "MINUTE": " minute ",
+    "MINUTES": " minutes ",
+    "SECOND": " second ",
+    "SECONDS": " seconds "
+    },
+
+
+    "dialogMessages": {
+    "HEADER_UNABLE_TO_VIEW_LOG_DETAILS": "Failed to read Execution Log Details",
+
+    "HEADER_ACTIVATE_DECISION_RULE_SINGULAR": "Activate Decision Rule",
+    "ACTIVATE_DECISION_RULE_SINGULAR_MESSAGE": "Are you sure you want to activate the Decision Rule?",
+
+    "HEADER_ACTIVATE_DECISION_RULES": "Activate Decision Rules",
+    "ACTIVATE_DECISION_RULES_MESSAGE": "Are you sure you want to activate {0} Decision Rules?",
+
+    "HEADER_DEACTIVATE_DECISION_RULE_SINGULAR": "Deactivate Decision Rule",
+    "DEACTIVATE_DECISION_RULE_SINGULAR_MESSAGE": "Are you sure you want to deactivate the Decision Rule?",
+
+    "HEADER_DEACTIVATE_DECISION_RULES": "Deactivate Decision Rules",
+    "DEACTIVATE_DECISION_RULES_MESSAGE": "Are you sure you want to deactivate {0} Decision Rules?",
+
+    "HEADER_UNABLE_TO_ACTIVATE_DECISION_RULE": "Failed to Activate Decision Rule",
+    "HEADER_UNABLE_TO_DEACTIVATE_DECISION_RULE": "Failed to Deactivate Decision Rule",
+
+    "HEADER_UNABLE_TO_SAVE_DECISION_RULE": "Failed to Save Decision Rule",
+    "FAILED_DECISION_RULE_MESSAGE": "The request could not be completed as the Decision Rule already exists.",
+
+    "HEADER_DELETE_DECISION_RULES": "Delete Decision Rules",
+    "DELETE_DECISION_RULES_MESSAGE": "Are you sure you want to delete {0} Decision Rules?",
+
+    "HEADER_DELETE_DECISION_RULE_SINGULAR": "Delete Decision Rule",
+    "DELETE_DECISION_RULE_SINGULAR_MESSAGE": "Are you sure you want to delete the Decision Rule?",
+
+    "HEADER_UNABLE_TO_DELETE_DECISION_RULE": "Failed to Delete Decision Rule",
+    "HEADER_UNABLE_TO_DELETE_DECISION_RULES": "Failed to Delete Decision Rules",
+    "HEADER_PARTIAL_FAILURE_TO_DELETE_DECISION_RULE": "Partial Failure. Failed to Delete some Decision Rules",
+
+    "VALID_BASIC_LICENCE_HEADER": "Valid License Required",
+    "VALID_BASIC_LICENSE_REQUIRED_WARNING": "<p>A valid license is required for this application. </p><p>Contact your System Administrator to activate this application or return to the <a href=''>Application Launcher</a></p>.",
+
+    "STANDARD_DIALOG_ERROR_MESSAGE_CONTENT": "The server encountered an internal error.",
+    "STANDARD_DIALOG_ERROR_MESSAGE_OPTIONAL_CONTENT": "Please try again later or contact your System Administrator.",
+    "UNAUTHORIZED_DIALOG_HEADER": "Unauthorized to {0}",
+    "UNAUTHORIZED_DIALOG_CONTENT": "Your role does not allow you to {0}.",
+    "UNAUTHORIZED_DIALOG_CONTENT_SECOND_LINE": "Contact your Security Administrator for Help.",
+    "CONFIRM_NAVIGATION_HEADER": "Confirm Navigation",
+    "UNSAVED_CHANGES_WARNING": "You have unsaved changes that will be lost if you leave this page.",
+    "UNSAVED_CHANGES_AREA_WARNING": "You have unsaved changes that will be lost if you leave this area.",
+    "CONFIRM_REFRESH_HEADER": "Confirm Refresh",
+    "UNSAVED_CHANGES_ON_REFRESH_WARNING": "You have unsaved changes that will be lost if you refresh.",
+    "CREATE_DECISION_RULE_SUCCEEDED": "Create Decision Rule Succeeded",
+    "UPDATED_DECISION_RULE_SUCCEEDED": "Update Decision Rule Succeeded",
+    "SUBMIT_HIDDEN_TEXT": "(Hidden Text)",
+
+    "COPYRIGHT_LEGAL_NOTICE_HEADER": "IMPORTANT LEGAL NOTICE",
+    "COPYRIGHT_LEGAL_NOTICE_CONTENT": "IF YOU ARE NOT AN AUTHORIZED USER, PLEASE EXIT IMMEDIATELY.",
+    "COPYRIGHT_MESSAGE": "© Ericsson Enterprise AB, 2019. All rights reserved."
+    },
+     "validate": {
+    "SUCCESS": "Decision Rule saved.",
+    "SAVE_ERROR": "Decision Rule will not be saved. There are errors with the Dialog box.",
+    "ACTIVATE_ERROR": "Decision Rule will not be activated.",
+    "ERROR_SECOND_LINE": "There are errors with the Dialog box.",
+    "ALTERNATE_ACTION_ACTIVATE_ERROR": "Decision Rule will not be activated.",
+    "ALTERNATE_ACTION_SAVE_ERROR": "Decision Rule will not be saved.",
+    "ALTERNATE_ACTION_SECOND_LINE": "All 3 Alternative Action options must be selected or none at all.",
+    "ALTERNATE_ACTION_HEADER": "Decision Rule Dialog Error",
+    "VALUE_REQUIRED_MESSAGE" : "Value required",
+    "VALIDATION_INVALID_CHARACTERS": "Invalid characters in value",
+    "NUMERIC_CHARACTERS_ONLY": "Value must be a numeric value greater than 0",
+    "EMPTY_MANDATORY_FIELD": "Please fill in all mandatory fields.",
+    "ALTERNATE_ACTION_REQUIRED": "All 3 Alternative Actions must be selected or none at all."
+    },
+
+    "logout": {
+        "LOG_OUT": "Log Out",
+        "LOGOUT_HEADER": "Log Out",
+        "LOGOUT_MESSAGE": "Are you sure you want to log out from Policy Framework?",
+        "ACTION_CAPTION": "Log Out",
+        "LOGOUT_CAPTION_WITH_USER": "Log Out {0}",
+        "LOGOUT_HEADER_WITH_USER": "Log Out {0}"
+    },
+
+    "createSlice": {
+        "NAME": "Name",
+        "SLICE_DESCRIPTION": "Service Description",
+        "ENABLED": "enabled",
+        "DISABLED": "disabled"
+
+    }
+}

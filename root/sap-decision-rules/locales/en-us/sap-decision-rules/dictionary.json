@@ -1,0 +1,8 @@
+{
+    "toasts": {
+        "STATUS_UPDATE_TOAST": "Status updated",
+        "DECISION_RULE_DELETE_SINGULAR_SUCCESS_TOAST": "Delete Decision Rule request sent",
+        "DECISION_RULES_DELETE_SUCCESS_TOAST": "Delete Decision Rules request sent",
+        "DECISION_RULE_ACTIVATED_TOAST": "Activate Decision Rule request accepted"
+    }
+}

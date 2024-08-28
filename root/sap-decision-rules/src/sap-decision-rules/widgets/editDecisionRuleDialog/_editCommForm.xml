@@ -1,0 +1,19 @@
+<form>
+    <field label="{{STATUS.label}}" name="status">
+        <text disabled="disabled" value="{{inputData.status}}"/>
+    </field>
+    <field label="{{EVENT_TYPE.label}}" name="eventType">
+        <text disabled="disabled" value="{{inputData.eventType}}"/>
+    </field>
+    <field label="{{ASSET_TYPE.label}}" name="assetType">
+        <text disabled="disabled" value="{{inputData.assetType}}"/>
+    </field>
+    <struct label="{{PRIMARY_ACTION.label}}" name="primaryAction" expanded="expanded">
+        <field label="{{ACTION.label}}" name="action" info="Required: Action value" required="required">
+            <select>
+                <option value="recreatevms">{{ACTION.recreateVms}}</option>
+                <option value="logOnly">{{ACTION.logOnly}}</option>
+             </select>
+         </field>
+    </struct>
+</form>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit tests</title>
+    <script src="../../_tools/index.js"></script>
+    <script src="../../.cdt/require.config.js"></script>
+    <script src="../resources/polyfills/MutationObserver.js"></script>
+    <script>
+        loadTestDependencies({
+            requireConfig: {
+                baseUrl: "../../src",
+                i18n: {
+                    locales: ['en-us'],
+                    localesDir: "../../locales"
+                }
+            },
+            tests: [
+                    "SapDecisionRulesAppTest",
+                    "../regions/decision/DecisionContextActionsTest",
+                    "../regions/decision/DecisionRegionTest",
+                    "../widgets/createDecisionRuleDialog/CreateDecisionRulesDialogTest",
+                    "../widgets/editDecisionRuleDialog/EditDecisionRulesDialogTest"
+            ]
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>

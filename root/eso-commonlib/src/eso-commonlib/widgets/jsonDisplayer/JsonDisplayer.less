@@ -1,0 +1,42 @@
+.elEsoCommonlib-wJsonDisplayer{
+
+  @white: #ffffff;
+  @black_5: #f2f2f2;
+  @black_10: #e6e6e6;
+
+
+
+  &-menubar{
+    overflow: hidden;
+    top: 40px;
+    width: 100%;  // give panel content scrollbar room
+
+    display: none; // default not shown
+
+    border-radius: 5px;
+    background: linear-gradient(@white, @black_5);
+    border-bottom: 2px solid @black_10;
+    height: 24px;
+
+  }
+
+  &-rawJSON{
+    position: absolute;
+    top: 60px;
+  }
+
+  &-copybutton{
+    float: right;
+
+  }
+
+  &-printbutton{
+    float: right;
+    margin-right: 30px;  // right-most button (copy may not be supported too) - need something if scrollbar in content
+  }
+
+  &-arrayTree{
+   position: relative;
+   right: 20px;
+  }
+}

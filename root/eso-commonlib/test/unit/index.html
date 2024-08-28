@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit tests</title>
+    <script src="../../_tools/index.js"></script>
+    <script src="../../.cdt/require.config.js"></script>
+    <script src="../resources/polyfills/MutationObserver.js"></script>
+    <script>
+        loadTestDependencies({
+            requireConfig: {
+                baseUrl: "../../src",
+                i18n: {
+                    locales: ['en-us'],
+                    localesDir: "../../locales"
+                }
+            },
+            tests: [
+                 "networkHandling/AjaxServiceTest",
+                 "networkHandling/NetAjaxInterceptorTest",
+                 "regions/formInput/FormInputRegionTest",    // not working on cdt2 build (works in browser)
+                 "tablecells/BoldFontCellTest",
+                 "tablecells/JSONValueCellTest",
+                 "tablecells/ReplaceNullCellTest",
+                 "utils/UtilsTest",
+                 "utils/DialogUtilsTest",
+                 "utils/FieldValidatorTest",
+                 "widgets/filterTextField/FilterTextFieldTest",
+                 "widgets/formInput/FormInputWidgetTest",
+                 "widgets/jsonDisplayer/JsonDisplayerTest",
+                 "widgets/refresh/RefreshWidgetTest",
+                 "widgets/lastrefreshed/LastRefreshedLabelTest",
+                 "paginatedlayout/BackgroundTableRefresherTest"
+            ]
+        });
+
+    </script>
+</head>
+<body>
+</body>
+</html>

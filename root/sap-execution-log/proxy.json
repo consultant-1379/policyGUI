@@ -1,0 +1,15 @@
+{
+    "mappings": [
+        {
+            "source": "/sd",
+            "dest": "/sd"
+        }
+    ],
+    "host": "policynbi.sd-assurance.svc.cluster.local",
+    "port": 8080,
+    "headers": 
+    	{
+    		"X-Custom-Header": "cdt"
+    	}
+
+}

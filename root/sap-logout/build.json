@@ -1,0 +1,30 @@
+{
+    "parent": "$(parentJson)/app.json",
+    "defaultPhase": "package",
+    "properties": {
+        "package": "sap-logout",
+        "name": "SapLogout",
+        "version": "1.0.0",
+        "skeleton": "2.3.1",
+        "skeletonType": "app"
+    },
+    "phases": {
+        "package": {
+            "depends": [
+                "clean",
+                "analyze",
+                "test",
+                "compile",
+                "compress"
+            ]
+        }
+    },
+    "dependencies": {
+        "i18n": "2.4.5",
+        "container": "1.14.12",
+        "assets": "1.9.1",
+        "jscore": "1.8.0",
+        "widgets": "1.8.26",
+        "layouts": "1.8.11"
+    }
+}

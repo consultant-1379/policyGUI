@@ -1,0 +1,33 @@
+{
+    "exports": {
+
+        "eso-commonlib/Constants": "eso-commonlib/constants/Constants",
+        "eso-commonlib/UrlConstants": "eso-commonlib/constants/UrlConstants",
+        "eso-commonlib/HttpConstants": "eso-commonlib/constants/HttpConstants",
+
+
+        "eso-commonlib/DialogUtils": "eso-commonlib/utils/DialogUtils",
+        "eso-commonlib/Utils": "eso-commonlib/utils/Utils",
+        "eso-commonlib/FieldValidator": "eso-commonlib/utils/FieldValidator",
+
+        "eso-commonlib/NetAjaxInterceptor": "eso-commonlib/networkHandling/NetAjaxInterceptor",
+        "eso-commonlib/AjaxService": "eso-commonlib/networkHandling/AjaxService",
+
+        "eso-commonlib/ReplaceNullCell": "eso-commonlib/tablecells/ReplaceNullCell",
+        "eso-commonlib/BoldFontCell": "eso-commonlib/tablecells/BoldFontCell",
+        "eso-commonlib/JSONValueCell": "eso-commonlib/tablecells/JSONValueCell",
+        "eso-commonlib/StatusCell" : "eso-commonlib/tablecells/status/StatusCell",
+        "eso-commonlib/RawMessageCell" : "eso-commonlib/tablecells/rawMessage/RawMessageCell",
+
+        "eso-commonlib/FilterTextField": "eso-commonlib/widgets/filterTextField/FilterTextField",
+        "eso-commonlib/LastRefreshedLabel": "eso-commonlib/widgets/lastrefreshed/LastRefreshedLabel",
+        "eso-commonlib/RefreshWidget": "eso-commonlib/widgets/refresh/RefreshWidget",
+        "eso-commonlib/JsonDisplayer": "eso-commonlib/widgets/jsonDisplayer/JsonDisplayer",
+
+        "eso-commonlib/FormInputRegion": "eso-commonlib/regions/formInput/FormInputRegion",
+
+        "eso-commonlib/GeneralPaginatedLayoutTable": "eso-commonlib/paginatedlayout/GeneralPaginatedLayoutTable",
+        "eso-commonlib/TableSettingsUpdater": "eso-commonlib/paginatedlayout/TableSettingsUpdater"
+        
+    }
+}

@@ -1,0 +1,44 @@
+<e-link src="./FilterForm.less"/>
+<div class="eaSapExecutionLog-wFilterForm">
+    <e-element src="layouts/Form" e-id="eaSapExecutionLog-filterForm">
+        <form>
+            <field label="{{columnHeaders.FROM_DATE}}" name="fromDate">
+                <text
+                {{#if data.toDate}}value="{{data.fromDate}}"{{/if}} />
+            </field>
+            <field label="{{columnHeaders.TO_DATE}}" name="toDate">
+                <text
+                {{#if data.toDate}}value="{{data.toDate}}"{{/if}} />
+            </field>
+            <field label="{{columnHeaders.STATUS}}" name="status">
+                <text
+                {{#if data.status}}value="{{data.status}}"{{/if}} />
+            </field>
+            <field label="{{columnHeaders.EVENT_TYPE}}" name="eventType">
+                <text
+                {{#if data.eventType}}value="{{data.eventType}}"{{/if}} />
+            </field>
+            <field label="{{columnHeaders.ASSET_TYPE}}" name="assetType">
+                <text
+                {{#if data.assetType}}value="{{data.assetType}}"{{/if}} />
+            </field>
+            <field label="{{columnHeaders.ASSET_NAME}}" name="assetName">
+                <text
+                {{#if data.assetName}}value="{{data.assetName}}"{{/if}} />
+            </field>
+            <field label="{{columnHeaders.ACTION}}" name="action">
+                <text
+                {{#if data.action}}value="{{data.action}}"{{/if}} />
+            </field>
+            <field label="{{columnHeaders.INSTANCE_ID}}" name=instanceId>
+                <text
+                {{#if data.instanceId}}value="{{data.instanceId}}"{{/if}} />
+            </field>
+            <field label="{{columnHeaders.ENGINE_ID}}" name="engineId">
+                <text
+                {{#if data.engineId}}value="{{data.engineId}}"{{/if}} />
+            </field>
+        </form>
+    </e-element>
+</div>
+

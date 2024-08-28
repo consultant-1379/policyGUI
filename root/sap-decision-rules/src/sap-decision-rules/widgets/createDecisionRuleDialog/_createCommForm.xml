@@ -1,0 +1,22 @@
+<form>
+    <field label="{{EVENT_TYPE.label}}" name="eventType" info="Required: Event Type value" required="required">
+        <select>
+            <option value="COMM" selected="selected">{{EVENT_TYPE.comm}}</option>
+            <option value="PM">{{EVENT_TYPE.pm}}</option>
+            <option value="FM">{{EVENT_TYPE.fm}}</option>
+        </select>
+    </field>
+    <field label="{{ASSET_TYPE.label}}" name="assetType" info="Required: Asset Type value" required="required">
+        <select>
+            <option value="Host" selected="selected">{{ASSET_TYPE.host}}</option>
+        </select>
+    </field>
+    <struct label="{{PRIMARY_ACTION.label}}" name="primaryAction" expanded="expanded">
+        <field label="{{ACTION.label}}" name="action" info="Required: Action value" required="required">
+            <select>
+                <option value="recreatevms" selected="selected">{{ACTION.recreateVms}}</option>
+                <option value="logOnly">{{ACTION.logOnly}}</option>
+            </select>
+        </field>
+    </struct>
+</form>

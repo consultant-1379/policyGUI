@@ -1,0 +1,61 @@
+<form>
+    <field label="{{EVENT_TYPE.label}}" name="eventType" info="Required: Event Type value" required="required">
+        <select>
+            <option value="PM" selected="selected">{{EVENT_TYPE.pm}}</option>
+            <option value="FM">{{EVENT_TYPE.fm}}</option>
+            <option value="COMM">{{EVENT_TYPE.comm}}</option>
+        </select>
+    </field>
+    <field label="{{ASSET_TYPE.label}}" name="assetType" info="Required:  Asset Type value" required="required">
+        <select>
+            <option value="VM" selected="selected">{{ASSET_TYPE.vm}}</option>
+            <option value="VNF">{{ASSET_TYPE.vnf}}</option>
+        </select>
+    </field>
+    <field label="{{TENANT_NAME.label}}" name="tenantName" required="required">
+            <text placeholder="{{TENANT_NAME.placeholder}}" />
+    </field>
+    <field label="{{METER_NAME.label}}" name="meterName" required="required">
+            <text placeholder="{{METER_NAME.placeholder}}"/>
+    </field>
+    <field label="{{SEVERITY_EVALUATION.label}}" name="severityEvaluation" required="required">
+        <select>
+            <option value=">" selected="selected">{{SEVERITY_EVALUATION.gt}}</option>
+            <option value=">=">{{SEVERITY_EVALUATION.gte}}</option>
+            <option value="=">{{SEVERITY_EVALUATION.equal}}</option>
+        </select>
+    </field>
+    <field label="{{SEVERITY.label}}" name="severity" required="required">
+        <select>
+            <option value="warning" selected="selected">{{SEVERITY.warn}}</option>
+            <option value="minor">{{SEVERITY.minor}}</option>
+            <option value="major">{{SEVERITY.major}}</option>
+            <option value="critical">{{SEVERITY.critical}}</option>
+        </select>
+    </field>
+    <struct label="{{PRIMARY_ACTION.label}}" name="primaryAction" expanded="expanded">
+        <field label="{{ACTION.label}}" name="action" info="Required: Action value" required="required">
+            <select>
+                <option value="restart" selected="selected">{{ACTION.restartVm}}</option>
+                <option value="recreate">{{ACTION.recreate}}</option>
+                <option value="logOnly">{{ACTION.logOnly}}</option>
+             </select>
+         </field>
+    </struct>
+    <struct label="{{ALTERNATE_ACTION.label}}" name="alternateAction" expanded="expanded">
+        <field label="{{ACTION_COUNT.label}}" info="{{ACTION_COUNT.info}}" name="{{ACTION_COUNT.name}}">
+            <text/>
+        </field>
+        <field label="{{TIME_LAPSE.label}}" info="{{TIME_LAPSE.info}}" name="timeLapse">
+            <text/>
+        </field>
+        <field label="{{ALT_ACTION.label}}" name="alternativeAction">
+            <select>
+                <option value="None" selected="selected">{{ALT_ACTION.placeholder}}</option>
+                <option value="recreate">{{ALT_ACTION.recreateVm}}</option>
+                <option value="restart">{{ALT_ACTION.restartVm}}</option>
+                <option value="logOnly">{{ACTION.logOnly}}</option>
+            </select>
+        </field>
+    </struct>
+</form>

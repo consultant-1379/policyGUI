@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+ <modelVersion>4.0.0</modelVersion>
+
+ <!--Please Use the latest version of integration pom.xml or the one you 
+  want to reference to -->
+ <parent>
+  <groupId>com.ericsson.nms</groupId>
+  <artifactId>integration</artifactId>
+  <version>15.2.0.19</version>
+ </parent>
+
+ <groupId>com.ericsson.orchestration.solutiondevelopment.assurance</groupId>
+ <artifactId>policyGUI</artifactId>
+ <version>1.6.5-SNAPSHOT</version>
+ <packaging>pom</packaging>
+
+ <properties>
+  <java.version>1.8</java.version>
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  <ericsson.scm.url>scm:git:[fetch=]ssh://gerritmirror.lmera.ericsson.se:29418/OSS/com.ericsson.orchestration.solutiondevelopment.assurance/policyGUI[push=]ssh://gerrit.ericsson.se:29418/OSS/com.ericsson.orchestration.solutiondevelopment.assurance/policyGUI</ericsson.scm.url>
+ </properties>
+
+ <modules>
+  <module>root</module>
+  <module>testsuite/usat-functional</module>
+ </modules>
+
+ <scm>
+  <developerConnection>${ericsson.scm.url}</developerConnection>
+  <connection>${ericsson.scm.url}</connection>
+  <tag>HEAD</tag>
+ </scm>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.3</version>
+          <configuration>
+            <source>${java.version}</source>
+            <target>${java.version}</target>
+          </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-failsafe-plugin</artifactId>
+          <version>2.19.1</version>
+          <configuration>
+            <systemPropertyVariables>
+              <skipIntegration />
+            </systemPropertyVariables>
+            <includes>
+              <include>**/**/**/*Spec.*</include>
+            </includes>
+          </configuration>
+          <executions>
+            <execution>
+              <goals>
+                <goal>integration-test</goal>
+                <goal>verify</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
